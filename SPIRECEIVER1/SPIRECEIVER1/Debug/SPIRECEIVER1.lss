@@ -1,0 +1,287 @@
+
+SPIRECEIVER1.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000004  00800100  00000174  00000208  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000174  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000004  00800104  00800104  0000020c  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  0000020c  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  0000023c  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000030  00000000  00000000  0000027c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   000008da  00000000  00000000  000002ac  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 0000080d  00000000  00000000  00000b86  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   00000285  00000000  00000000  00001393  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  0000008c  00000000  00000000  00001618  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    00000425  00000000  00000000  000016a4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    000000ea  00000000  00000000  00001ac9  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000020  00000000  00000000  00001bb3  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	60 c0       	rjmp	.+192    	; 0xc6 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	5e c0       	rjmp	.+188    	; 0xc6 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	5c c0       	rjmp	.+184    	; 0xc6 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	5a c0       	rjmp	.+180    	; 0xc6 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	58 c0       	rjmp	.+176    	; 0xc6 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	56 c0       	rjmp	.+172    	; 0xc6 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	54 c0       	rjmp	.+168    	; 0xc6 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	52 c0       	rjmp	.+164    	; 0xc6 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	50 c0       	rjmp	.+160    	; 0xc6 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	4e c0       	rjmp	.+156    	; 0xc6 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	4c c0       	rjmp	.+152    	; 0xc6 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	4a c0       	rjmp	.+148    	; 0xc6 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	48 c0       	rjmp	.+144    	; 0xc6 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	46 c0       	rjmp	.+140    	; 0xc6 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	44 c0       	rjmp	.+136    	; 0xc6 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	42 c0       	rjmp	.+132    	; 0xc6 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	45 c0       	rjmp	.+138    	; 0xd0 <__vector_17>
+  46:	00 00       	nop
+  48:	3e c0       	rjmp	.+124    	; 0xc6 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	3c c0       	rjmp	.+120    	; 0xc6 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	3a c0       	rjmp	.+116    	; 0xc6 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	38 c0       	rjmp	.+112    	; 0xc6 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	36 c0       	rjmp	.+108    	; 0xc6 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	34 c0       	rjmp	.+104    	; 0xc6 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	32 c0       	rjmp	.+100    	; 0xc6 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	30 c0       	rjmp	.+96     	; 0xc6 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	2e c0       	rjmp	.+92     	; 0xc6 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	2c c0       	rjmp	.+88     	; 0xc6 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	2a c0       	rjmp	.+84     	; 0xc6 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	28 c0       	rjmp	.+80     	; 0xc6 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	26 c0       	rjmp	.+76     	; 0xc6 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	24 c0       	rjmp	.+72     	; 0xc6 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	22 c0       	rjmp	.+68     	; 0xc6 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	20 c0       	rjmp	.+64     	; 0xc6 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	1e c0       	rjmp	.+60     	; 0xc6 <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_copy_data>:
+  98:	11 e0       	ldi	r17, 0x01	; 1
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	e4 e7       	ldi	r30, 0x74	; 116
+  a0:	f1 e0       	ldi	r31, 0x01	; 1
+  a2:	00 e0       	ldi	r16, 0x00	; 0
+  a4:	0b bf       	out	0x3b, r16	; 59
+  a6:	02 c0       	rjmp	.+4      	; 0xac <__do_copy_data+0x14>
+  a8:	07 90       	elpm	r0, Z+
+  aa:	0d 92       	st	X+, r0
+  ac:	a4 30       	cpi	r26, 0x04	; 4
+  ae:	b1 07       	cpc	r27, r17
+  b0:	d9 f7       	brne	.-10     	; 0xa8 <__do_copy_data+0x10>
+
+000000b2 <__do_clear_bss>:
+  b2:	21 e0       	ldi	r18, 0x01	; 1
+  b4:	a4 e0       	ldi	r26, 0x04	; 4
+  b6:	b1 e0       	ldi	r27, 0x01	; 1
+  b8:	01 c0       	rjmp	.+2      	; 0xbc <.do_clear_bss_start>
+
+000000ba <.do_clear_bss_loop>:
+  ba:	1d 92       	st	X+, r1
+
+000000bc <.do_clear_bss_start>:
+  bc:	a8 30       	cpi	r26, 0x08	; 8
+  be:	b2 07       	cpc	r27, r18
+  c0:	e1 f7       	brne	.-8      	; 0xba <.do_clear_bss_loop>
+  c2:	49 d0       	rcall	.+146    	; 0x156 <main>
+  c4:	55 c0       	rjmp	.+170    	; 0x170 <_exit>
+
+000000c6 <__bad_interrupt>:
+  c6:	9c cf       	rjmp	.-200    	; 0x0 <__vectors>
+
+000000c8 <SPI_init_slave>:
+volatile char receivedString[3]; // Buffer to store received string
+volatile uint8_t stringIndex = 0; // Index to keep track of received characters
+
+void SPI_init_slave() {
+	// Set MISO (Master In Slave Out) as output
+	DDRB |= (1 << DDB4);
+  c8:	bc 9a       	sbi	0x17, 4	; 23
+	
+	// Enable SPI, Set as Slave
+	SPCR |= (1 << SPE);
+  ca:	6e 9a       	sbi	0x0d, 6	; 13
+	
+	// Enable SPI interrupt
+	SPCR |= (1 << SPIE);
+  cc:	6f 9a       	sbi	0x0d, 7	; 13
+  ce:	08 95       	ret
+
+000000d0 <__vector_17>:
+}
+
+ISR(SPI_STC_vect) {
+  d0:	1f 92       	push	r1
+  d2:	0f 92       	push	r0
+  d4:	0f b6       	in	r0, 0x3f	; 63
+  d6:	0f 92       	push	r0
+  d8:	11 24       	eor	r1, r1
+  da:	0b b6       	in	r0, 0x3b	; 59
+  dc:	0f 92       	push	r0
+  de:	2f 93       	push	r18
+  e0:	3f 93       	push	r19
+  e2:	4f 93       	push	r20
+  e4:	5f 93       	push	r21
+  e6:	6f 93       	push	r22
+  e8:	7f 93       	push	r23
+  ea:	8f 93       	push	r24
+  ec:	9f 93       	push	r25
+  ee:	af 93       	push	r26
+  f0:	bf 93       	push	r27
+  f2:	ef 93       	push	r30
+  f4:	ff 93       	push	r31
+	// SPI Transfer Complete interrupt vector
+	
+	// Read received data from SPI data register
+	char receivedChar = SPDR;
+  f6:	8f b1       	in	r24, 0x0f	; 15
+	
+	// Store the received character in the buffer
+	receivedString[stringIndex++] = receivedChar;
+  f8:	e0 91 04 01 	lds	r30, 0x0104	; 0x800104 <__data_end>
+  fc:	91 e0       	ldi	r25, 0x01	; 1
+  fe:	9e 0f       	add	r25, r30
+ 100:	90 93 04 01 	sts	0x0104, r25	; 0x800104 <__data_end>
+ 104:	f0 e0       	ldi	r31, 0x00	; 0
+ 106:	eb 5f       	subi	r30, 0xFB	; 251
+ 108:	fe 4f       	sbci	r31, 0xFE	; 254
+ 10a:	80 83       	st	Z, r24
+	
+	// Check if the end of the string is reached
+	if (stringIndex == 2) {
+ 10c:	80 91 04 01 	lds	r24, 0x0104	; 0x800104 <__data_end>
+ 110:	82 30       	cpi	r24, 0x02	; 2
+ 112:	71 f4       	brne	.+28     	; 0x130 <__vector_17+0x60>
+		// Null-terminate the string
+		receivedString[2] = '\0';
+ 114:	10 92 07 01 	sts	0x0107, r1	; 0x800107 <receivedString+0x2>
+		
+		// Reset the index for the next string
+		stringIndex = 0;
+ 118:	10 92 04 01 	sts	0x0104, r1	; 0x800104 <__data_end>
+		
+		// Check if the received string is "L1"
+		if (strcmp(receivedString, "L1") == 0) {
+ 11c:	60 e0       	ldi	r22, 0x00	; 0
+ 11e:	71 e0       	ldi	r23, 0x01	; 1
+ 120:	85 e0       	ldi	r24, 0x05	; 5
+ 122:	91 e0       	ldi	r25, 0x01	; 1
+ 124:	1c d0       	rcall	.+56     	; 0x15e <strcmp>
+ 126:	89 2b       	or	r24, r25
+ 128:	19 f4       	brne	.+6      	; 0x130 <__vector_17+0x60>
+			// Toggle an output pin to control the relay
+			// Assuming the relay is connected to, for example, PORTD pin 7
+			PORTD ^= (1 << PD7);
+ 12a:	82 b3       	in	r24, 0x12	; 18
+ 12c:	80 58       	subi	r24, 0x80	; 128
+ 12e:	82 bb       	out	0x12, r24	; 18
+		}
+	}
+}
+ 130:	ff 91       	pop	r31
+ 132:	ef 91       	pop	r30
+ 134:	bf 91       	pop	r27
+ 136:	af 91       	pop	r26
+ 138:	9f 91       	pop	r25
+ 13a:	8f 91       	pop	r24
+ 13c:	7f 91       	pop	r23
+ 13e:	6f 91       	pop	r22
+ 140:	5f 91       	pop	r21
+ 142:	4f 91       	pop	r20
+ 144:	3f 91       	pop	r19
+ 146:	2f 91       	pop	r18
+ 148:	0f 90       	pop	r0
+ 14a:	0b be       	out	0x3b, r0	; 59
+ 14c:	0f 90       	pop	r0
+ 14e:	0f be       	out	0x3f, r0	; 63
+ 150:	0f 90       	pop	r0
+ 152:	1f 90       	pop	r1
+ 154:	18 95       	reti
+
+00000156 <main>:
+
+int main(void) {
+	// Initialize SPI as a slave
+	SPI_init_slave();
+ 156:	b8 df       	rcall	.-144    	; 0xc8 <SPI_init_slave>
+	
+	// Enable global interrupts
+	sei();
+ 158:	78 94       	sei
+	DDRD|=(1<<7);
+ 15a:	8f 9a       	sbi	0x11, 7	; 17
+ 15c:	ff cf       	rjmp	.-2      	; 0x15c <main+0x6>
+
+0000015e <strcmp>:
+ 15e:	fb 01       	movw	r30, r22
+ 160:	dc 01       	movw	r26, r24
+ 162:	8d 91       	ld	r24, X+
+ 164:	01 90       	ld	r0, Z+
+ 166:	80 19       	sub	r24, r0
+ 168:	01 10       	cpse	r0, r1
+ 16a:	d9 f3       	breq	.-10     	; 0x162 <strcmp+0x4>
+ 16c:	99 0b       	sbc	r25, r25
+ 16e:	08 95       	ret
+
+00000170 <_exit>:
+ 170:	f8 94       	cli
+
+00000172 <__stop_program>:
+ 172:	ff cf       	rjmp	.-2      	; 0x172 <__stop_program>

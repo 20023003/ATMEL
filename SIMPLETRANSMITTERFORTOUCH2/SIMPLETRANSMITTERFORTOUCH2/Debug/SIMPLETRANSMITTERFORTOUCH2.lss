@@ -1,0 +1,340 @@
+
+SIMPLETRANSMITTERFORTOUCH2.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800100  00800100  00000260  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         000001ec  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000007  00800100  00800100  00000260  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  00000260  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  00000290  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 000000b0  00000000  00000000  000002d0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   00000e66  00000000  00000000  00000380  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 00000bd8  00000000  00000000  000011e6  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   000005fa  00000000  00000000  00001dbe  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  00000188  00000000  00000000  000023b8  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    00000713  00000000  00000000  00002540  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    0000022e  00000000  00000000  00002c53  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000090  00000000  00000000  00002e81  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 66 00 	jmp	0xcc	; 0xcc <__ctors_end>
+   4:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+   8:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+   c:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  10:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  14:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  18:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  1c:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  20:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  24:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  28:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  2c:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  30:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  34:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  38:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  3c:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  40:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  44:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  48:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  4c:	0c 94 9e 00 	jmp	0x13c	; 0x13c <__vector_19>
+  50:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  54:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  58:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  5c:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  60:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  64:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  68:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  6c:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  70:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  74:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  78:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  7c:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  80:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  84:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  88:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  8c:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  90:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  94:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  98:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  9c:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  a0:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  a4:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  a8:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  ac:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  b0:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  b4:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  b8:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  bc:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  c0:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  c4:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+  c8:	0c 94 83 00 	jmp	0x106	; 0x106 <__bad_interrupt>
+
+000000cc <__ctors_end>:
+  cc:	11 24       	eor	r1, r1
+  ce:	1f be       	out	0x3f, r1	; 63
+  d0:	cf ef       	ldi	r28, 0xFF	; 255
+  d2:	d8 e0       	ldi	r29, 0x08	; 8
+  d4:	de bf       	out	0x3e, r29	; 62
+  d6:	cd bf       	out	0x3d, r28	; 61
+
+000000d8 <__do_copy_data>:
+  d8:	11 e0       	ldi	r17, 0x01	; 1
+  da:	a0 e0       	ldi	r26, 0x00	; 0
+  dc:	b1 e0       	ldi	r27, 0x01	; 1
+  de:	ec ee       	ldi	r30, 0xEC	; 236
+  e0:	f1 e0       	ldi	r31, 0x01	; 1
+  e2:	02 c0       	rjmp	.+4      	; 0xe8 <__do_copy_data+0x10>
+  e4:	05 90       	lpm	r0, Z+
+  e6:	0d 92       	st	X+, r0
+  e8:	a0 30       	cpi	r26, 0x00	; 0
+  ea:	b1 07       	cpc	r27, r17
+  ec:	d9 f7       	brne	.-10     	; 0xe4 <__do_copy_data+0xc>
+
+000000ee <__do_clear_bss>:
+  ee:	21 e0       	ldi	r18, 0x01	; 1
+  f0:	a0 e0       	ldi	r26, 0x00	; 0
+  f2:	b1 e0       	ldi	r27, 0x01	; 1
+  f4:	01 c0       	rjmp	.+2      	; 0xf8 <.do_clear_bss_start>
+
+000000f6 <.do_clear_bss_loop>:
+  f6:	1d 92       	st	X+, r1
+
+000000f8 <.do_clear_bss_start>:
+  f8:	a7 30       	cpi	r26, 0x07	; 7
+  fa:	b2 07       	cpc	r27, r18
+  fc:	e1 f7       	brne	.-8      	; 0xf6 <.do_clear_bss_loop>
+  fe:	0e 94 8f 00 	call	0x11e	; 0x11e <main>
+ 102:	0c 94 f4 00 	jmp	0x1e8	; 0x1e8 <_exit>
+
+00000106 <__bad_interrupt>:
+ 106:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+0000010a <SPI_MasterInit>:
+
+#define F_CPU 16000000UL
+
+void SPI_MasterInit(void) {
+	// Set MOSI, SCK as output, all others as input
+	DDRB = (1 << DDB2) | (1 << DDB1) | (1 << DDB0);
+ 10a:	87 e0       	ldi	r24, 0x07	; 7
+ 10c:	84 b9       	out	0x04, r24	; 4
+
+	// Enable SPI, Master, set clock rate fck/16
+	SPCR0 = (1 << SPE) | (1 << MSTR) | (1 << SPR0);
+ 10e:	81 e5       	ldi	r24, 0x51	; 81
+ 110:	8c bd       	out	0x2c, r24	; 44
+ 112:	08 95       	ret
+
+00000114 <SPI_MasterTransmit>:
+}
+
+void SPI_MasterTransmit(char data) {
+	// Start transmission
+	SPDR0 = data;
+ 114:	8e bd       	out	0x2e, r24	; 46
+
+	// Wait for transmission complete
+	while (!(SPSR0 & (1 << SPIF)))
+ 116:	0d b4       	in	r0, 0x2d	; 45
+ 118:	07 fe       	sbrs	r0, 7
+ 11a:	fd cf       	rjmp	.-6      	; 0x116 <SPI_MasterTransmit+0x2>
+	;
+}
+ 11c:	08 95       	ret
+
+0000011e <main>:
+
+int main(void) {
+	SPI_MasterInit();
+ 11e:	0e 94 85 00 	call	0x10a	; 0x10a <SPI_MasterInit>
+
+	while (1) {
+		// Send data
+		SPI_MasterTransmit('A');
+ 122:	81 e4       	ldi	r24, 0x41	; 65
+ 124:	0e 94 8a 00 	call	0x114	; 0x114 <SPI_MasterTransmit>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 128:	2f e3       	ldi	r18, 0x3F	; 63
+ 12a:	8d e0       	ldi	r24, 0x0D	; 13
+ 12c:	93 e0       	ldi	r25, 0x03	; 3
+ 12e:	21 50       	subi	r18, 0x01	; 1
+ 130:	80 40       	sbci	r24, 0x00	; 0
+ 132:	90 40       	sbci	r25, 0x00	; 0
+ 134:	e1 f7       	brne	.-8      	; 0x12e <main+0x10>
+ 136:	00 c0       	rjmp	.+0      	; 0x138 <main+0x1a>
+ 138:	00 00       	nop
+ 13a:	f3 cf       	rjmp	.-26     	; 0x122 <main+0x4>
+
+0000013c <__vector_19>:
+{
+	SPI_0_desc.cb = f;
+}
+
+ISR(SPI0_STC_vect)
+{
+ 13c:	1f 92       	push	r1
+ 13e:	0f 92       	push	r0
+ 140:	0f b6       	in	r0, 0x3f	; 63
+ 142:	0f 92       	push	r0
+ 144:	11 24       	eor	r1, r1
+ 146:	2f 93       	push	r18
+ 148:	3f 93       	push	r19
+ 14a:	4f 93       	push	r20
+ 14c:	5f 93       	push	r21
+ 14e:	6f 93       	push	r22
+ 150:	7f 93       	push	r23
+ 152:	8f 93       	push	r24
+ 154:	9f 93       	push	r25
+ 156:	af 93       	push	r26
+ 158:	bf 93       	push	r27
+ 15a:	cf 93       	push	r28
+ 15c:	df 93       	push	r29
+ 15e:	ef 93       	push	r30
+ 160:	ff 93       	push	r31
+	/* SPI_0_desc.data points to array element
+	   to write the received data to. The data to be transmitted
+	   is in the next array element.
+	*/
+	uint8_t rdata = SPDR0;
+ 162:	9e b5       	in	r25, 0x2e	; 46
+	uint8_t wdata = 0;
+
+	if (SPI_0_desc.type != SPI_WRITE) {
+ 164:	80 91 04 01 	lds	r24, 0x0104	; 0x800104 <__DATA_REGION_ORIGIN__+0x4>
+ 168:	82 30       	cpi	r24, 0x02	; 2
+ 16a:	11 f1       	breq	.+68     	; 0x1b0 <__vector_19+0x74>
+		*SPI_0_desc.data = rdata;
+ 16c:	c0 e0       	ldi	r28, 0x00	; 0
+ 16e:	d1 e0       	ldi	r29, 0x01	; 1
+ 170:	a9 81       	ldd	r26, Y+1	; 0x01
+ 172:	ba 81       	ldd	r27, Y+2	; 0x02
+ 174:	fd 01       	movw	r30, r26
+ 176:	91 93       	st	Z+, r25
+	}
+
+	SPI_0_desc.data++;
+ 178:	fa 83       	std	Y+2, r31	; 0x02
+ 17a:	e9 83       	std	Y+1, r30	; 0x01
+
+	if (SPI_0_desc.type != SPI_READ)
+ 17c:	81 30       	cpi	r24, 0x01	; 1
+ 17e:	19 f0       	breq	.+6      	; 0x186 <__vector_19+0x4a>
+		wdata = *SPI_0_desc.data;
+ 180:	11 96       	adiw	r26, 0x01	; 1
+ 182:	9c 91       	ld	r25, X
+ 184:	01 c0       	rjmp	.+2      	; 0x188 <__vector_19+0x4c>
+	/* SPI_0_desc.data points to array element
+	   to write the received data to. The data to be transmitted
+	   is in the next array element.
+	*/
+	uint8_t rdata = SPDR0;
+	uint8_t wdata = 0;
+ 186:	90 e0       	ldi	r25, 0x00	; 0
+	SPI_0_desc.data++;
+
+	if (SPI_0_desc.type != SPI_READ)
+		wdata = *SPI_0_desc.data;
+
+	SPI_0_desc.size--;
+ 188:	e0 e0       	ldi	r30, 0x00	; 0
+ 18a:	f1 e0       	ldi	r31, 0x01	; 1
+ 18c:	83 81       	ldd	r24, Z+3	; 0x03
+ 18e:	81 50       	subi	r24, 0x01	; 1
+ 190:	83 83       	std	Z+3, r24	; 0x03
+	// if more bytes to be transferred
+	if (SPI_0_desc.size != 0) {
+ 192:	88 23       	and	r24, r24
+ 194:	11 f0       	breq	.+4      	; 0x19a <__vector_19+0x5e>
+		// more data to send, send a byte
+		SPDR0 = wdata;
+ 196:	9e bd       	out	0x2e, r25	; 46
+ 198:	14 c0       	rjmp	.+40     	; 0x1c2 <__vector_19+0x86>
+	}
+
+	// if last byte has been transferred, update status
+	// and optionally call callback
+	else {
+		SPI_0_desc.status = SPI_DONE;
+ 19a:	e0 e0       	ldi	r30, 0x00	; 0
+ 19c:	f1 e0       	ldi	r31, 0x01	; 1
+ 19e:	83 e0       	ldi	r24, 0x03	; 3
+ 1a0:	80 83       	st	Z, r24
+		if (SPI_0_desc.cb != NULL) {
+ 1a2:	05 80       	ldd	r0, Z+5	; 0x05
+ 1a4:	f6 81       	ldd	r31, Z+6	; 0x06
+ 1a6:	e0 2d       	mov	r30, r0
+ 1a8:	30 97       	sbiw	r30, 0x00	; 0
+ 1aa:	59 f0       	breq	.+22     	; 0x1c2 <__vector_19+0x86>
+			SPI_0_desc.cb();
+ 1ac:	09 95       	icall
+		}
+	}
+}
+ 1ae:	09 c0       	rjmp	.+18     	; 0x1c2 <__vector_19+0x86>
+
+	if (SPI_0_desc.type != SPI_WRITE) {
+		*SPI_0_desc.data = rdata;
+	}
+
+	SPI_0_desc.data++;
+ 1b0:	e0 e0       	ldi	r30, 0x00	; 0
+ 1b2:	f1 e0       	ldi	r31, 0x01	; 1
+ 1b4:	a1 81       	ldd	r26, Z+1	; 0x01
+ 1b6:	b2 81       	ldd	r27, Z+2	; 0x02
+ 1b8:	cd 01       	movw	r24, r26
+ 1ba:	01 96       	adiw	r24, 0x01	; 1
+ 1bc:	92 83       	std	Z+2, r25	; 0x02
+ 1be:	81 83       	std	Z+1, r24	; 0x01
+ 1c0:	df cf       	rjmp	.-66     	; 0x180 <__vector_19+0x44>
+		SPI_0_desc.status = SPI_DONE;
+		if (SPI_0_desc.cb != NULL) {
+			SPI_0_desc.cb();
+		}
+	}
+}
+ 1c2:	ff 91       	pop	r31
+ 1c4:	ef 91       	pop	r30
+ 1c6:	df 91       	pop	r29
+ 1c8:	cf 91       	pop	r28
+ 1ca:	bf 91       	pop	r27
+ 1cc:	af 91       	pop	r26
+ 1ce:	9f 91       	pop	r25
+ 1d0:	8f 91       	pop	r24
+ 1d2:	7f 91       	pop	r23
+ 1d4:	6f 91       	pop	r22
+ 1d6:	5f 91       	pop	r21
+ 1d8:	4f 91       	pop	r20
+ 1da:	3f 91       	pop	r19
+ 1dc:	2f 91       	pop	r18
+ 1de:	0f 90       	pop	r0
+ 1e0:	0f be       	out	0x3f, r0	; 63
+ 1e2:	0f 90       	pop	r0
+ 1e4:	1f 90       	pop	r1
+ 1e6:	18 95       	reti
+
+000001e8 <_exit>:
+ 1e8:	f8 94       	cli
+
+000001ea <__stop_program>:
+ 1ea:	ff cf       	rjmp	.-2      	; 0x1ea <__stop_program>
